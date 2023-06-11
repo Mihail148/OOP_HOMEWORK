@@ -43,7 +43,7 @@ public class FileOperationImplemets implements FileOperation {
     }
 
     public void saveAllLines(List<String> lines){
-        try(FileWriter = new FileWriter(fileName, false)){
+        try(FileWriter writer = new FileWriter(fileName, false)){
             for(String line: lines){
                 writer.write(line);
                 writer.append('\n');
