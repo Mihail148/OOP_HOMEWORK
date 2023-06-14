@@ -27,7 +27,7 @@ public class UserControllers {
         repository.UpdateUser(user, field, param);
     }
 
-    public User readUser(String userId) throws Exception{
+    public static User readUser(String userId) throws Exception{
         List<User> users = repository.getAllUsers();
         for(User user: users){
             if(user.getId().equals(userId)){
